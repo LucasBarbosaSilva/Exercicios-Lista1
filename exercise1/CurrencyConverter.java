@@ -1,4 +1,4 @@
-package exercicio1;
+package exercise1;
 
 public class CurrencyConverter {
 	public static double dollarToReal(double amount, double dollarPrice) {
