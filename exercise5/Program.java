@@ -1,3 +1,10 @@
+package exercise5;
+import java.util.Date;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Locale;
+import java.util.Scanner;
+
 public class Program {
 
 	public static void main(String[] args) throws ParseException {
@@ -44,7 +51,7 @@ public class Program {
 		
 		System.out.println();
 		System.out.println("ORDER SUMMARY:");
-		System.out.println(order);
+		System.out.println(order.summary());
 		
 		sc.close();
 	}

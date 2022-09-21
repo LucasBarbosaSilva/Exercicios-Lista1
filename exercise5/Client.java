@@ -1,5 +1,6 @@
 package exercise5;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class Client {
@@ -13,28 +14,13 @@ public class Client {
         this.birthDate = birthDate;
     }
 
-    public Date getBirthDate() {
-        return birthDate;
+    public String birthDateFormated(){
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        return sdf.format(this.birthDate);
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public void setName(String name) {
-        this.name = name;
+    public String profile(){
+        return this.name + " "+ this.email + " " + this.birthDateFormated();
     }
 
 }

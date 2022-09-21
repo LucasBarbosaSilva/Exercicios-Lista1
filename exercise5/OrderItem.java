@@ -5,13 +5,17 @@ public class OrderItem {
     private int quantity;
     private double price;
     
-    public OrderItem (String name, double price, int quantity){
-        this.product = new Product(name, price);
+    public OrderItem (int quantity, double price, Product product ){
+        this.product = product;
         this.quantity = quantity;
         this.price = this.quantity * this.product.getPrice(); 
     }
 
     public double subTotal(){
         return this.price;
+    }
+
+    public String summary(){
+        return this.product + " "+ this.quantity + " "+this.subTotal();
     }
 }
