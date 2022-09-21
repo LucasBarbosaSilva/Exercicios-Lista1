@@ -5,7 +5,7 @@ public enum Color {
 
   private int value;
 
-  Color(int op){
+  private Color(int op){
     this.value = op;
   }
 

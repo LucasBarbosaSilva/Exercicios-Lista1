@@ -12,12 +12,11 @@ public class Program {
     for (int i = 1; i <= n; i++ ){
       System.out.printf("**Shape #%d data:**%n", i);
       System.out.print("Rectangle or Circle (r/c)? ");
-      String shape = sc.nextLine();
-      System.out.println(shape);
+      String shape = sc.next();
       System.out.print("Color (BLACK/BLUE/RED): ");
-      String color = sc.nextLine();
+      String color = sc.next();
       System.out.println();
-      if(shape == "r"){
+      if(shape.equals("r")){
         System.out.print("Width: ");
         double width = sc.nextDouble();  
         System.out.print("Height: ");
