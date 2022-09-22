@@ -9,7 +9,7 @@ public class Student {
   private double semesterGrade;
   private double finalGrade;
 
-  public Student(String fullName, String registration, ArrayList<Grade> grades){
+  public Student(String fullName, String registration, ArrayList<Grade> studentGrades){
     setFullName(fullName);
     setRegistration(registration);
     setStudentGrades(studentGrades);
@@ -97,7 +97,7 @@ public class Student {
   public String getGrades(){
     String grades = "";
     for (Grade grade: this.studentGrades){
-      grades = "| "+grades + grade.getInfo() + "\n";
+      grades = grades +"| " + grade.getInfo() + "\n";
     }
     return grades;
   }

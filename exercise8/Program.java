@@ -9,7 +9,10 @@ public class Program {
                    {"Lucas "+
                    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa", "201456789","-1","","6","Nota 2","7","Nota 3","8","Nota 4","9","Nota 5"},
                    {"Lucas Barbosa", "20145678","5","","6","Nota 2","7","Nota 3","8","Nota 4","9","Nota 5"},
-                   {"Lucas Barbosa", "20145678","5","Nota 1","6","Nota 2","7","Nota 3","8","Nota 4","9","Nota 5"}};
+                   {"Lucas Barbosa", "20145678","5","Nota 1","6","Nota 2","7","Nota 3","8","Nota 4","9","Nota 5"},
+                   {"Lucas Barbosa", "20145678","2","Nota 1","2","Nota 2","2","Nota 3","2","Nota 4","2","Nota 5"},
+                   {"Lucas Barbosa", "20145678","5","Nota 1","6","Nota 2","4","Nota 3","6","Nota 4","5","Nota 5"},
+                   {"Lucas Barbosa", "20145678","6","Nota 1","7","Nota 2","6","Nota 3","6","Nota 4","7","Nota 5"}};
     ArrayList<Student> students = new ArrayList<Student>();
     for (String[] data: datas){
       String name = data[0];
@@ -40,12 +43,11 @@ public class Program {
         } 
         Grade grade = new Grade(gradeValue, subject);
         studentGrades.add(grade);
-        System.out.println(studentGrades);
       }
       if(!gradesOK){
         continue;
       }
-      System.out.println(studentGrades);
+      
       Student student = new Student(name, registration, studentGrades);
       students.add(student);
     }
