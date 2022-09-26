@@ -7,6 +7,12 @@ public enum OrderStatus{
     DELIVED(4);
 
     private int value;
+    public int getValue() {
+        return value;
+    }
+    public void setValue(int value) {
+        this.value = value;
+    }
     private OrderStatus(int op){
         this.value = op;
     }
